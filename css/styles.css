@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Poppins:wght@100;300;400&family=Roboto:wght@300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:'Be Vietnam Pro',sans-serif ;
+    color: black;
+    font-size: 16px;
+}
+
+header,main,footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* >>>>>>>>>>>  Barra de Navegación  <<<<<<<<<<< */
+
+.container__nav{
+    font-size: 13px;
+    height: 100px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+      
+}
+
+.nav_item{
+    padding: 1em 0em;
+}
+
+.nav_item ul:hover{
+    cursor: pointer;
+}
+
+.nav_item ul{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.boton.contacto{
+    padding: .5em 2em;
+    background-color: #8B48BF;
+    color: aliceblue;
+    border: 0px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.40);
+}
+
+.boton.navegacion:hover{
+    cursor: pointer;
+}
+
+
+/*>>>>>>>>>>>>  CSS MAIN <<<<<<<<<<<<<<<<<<< */
+
+.container{
+    display: flex;
+    gap: 100px;
+
+}
+
+.introduccion article{
+    height: 540px;
+    padding: 1em 0em;
+}
+.mayusculas {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 0.5em;
+    /* letter-spacing: ; */
+}
+
+
+/*>>>>>>>>>>>>>> CSS mobile <<<<<<<<<<<< */
+
+@media (max-width:600px) {
+    .nav_item{
+        display:none;
+    }
+    
+}
+
+
