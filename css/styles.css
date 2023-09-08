@@ -38,7 +38,7 @@ header .container {
   }
 
   header .container {
-    max-width: 400px;
+    max-width: 370px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ header .container {
   }
 
   .introduccion .container {
-    max-width: 400px;
+    max-width: 370px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,8 @@ header .container {
     font-size: 16px;
   }
 
-  .descripcion .contacto {
+  .descripcion .contacto,
+  .avatares a {
     font-size: 13px;
     display: inline-block;
     padding: 1em 3em;
@@ -86,7 +87,7 @@ header .container {
 
   .informacion .container {
     background-color: #3cddf3;
-    max-width: 400px;
+    max-width: 370px;
     margin: 30px auto;
     padding: 40px 20px;
     display: flex;
@@ -108,31 +109,83 @@ header .container {
   .informacion__card {
     margin: 50px auto;
     background-color: white;
-    max-width: 400px;
+    max-width: 370px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .informacion__card h4 {
+    max-width: 400px;
     color: #323851;
     background-color: rgba(139, 72, 191, 0.3);
-    padding:10px 0 10px;
-    border-radius: 20px;
+    padding: 10px 0 10px;
+    border-radius: 20px 0 0 20px;
   }
 
-  .informacion__card span{
+  .informacion__card span {
+    max-width: 360px;
     color: white;
-    background-color: #8B48BF;
+    background-color: #8b48bf;
     margin-right: 20px;
     padding: 10px 25px;
     border-radius: 20px;
   }
 
-  .informacion__card p {
+  .informacion__card p,
+  .avatares p {
     margin: 31px 0;
     padding: 10px;
     color: #b3b2b7;
     line-height: 30px;
   }
+
+  .container__avatares {
+    max-width: 370px;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .container__avatares h2{
+    margin-bottom: 70px;
+    color: #242E53;
+    font-size: 39px;
+
+  }
+
+  .container__avatares p:nth-child(2n + 1) {
+    color: #3f4868;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+  }
+  
+  .container__avatares p{
+    padding-top: 0px;
+    margin-top: 5px;
+        
+  }
+
+  .container__avatares a{
+    padding: 1em 4em;
+
+  }
+
+  .informacion.avatares .container {
+    padding-top: 0px;
+  }
+
+  .informacion.avatares  h2{
+    font-size: 40px;
+    padding: 30px 30px 20px;
+    text-align: center;
+  }
+
+  .informacion.avatares a{
+    margin-top: 0px;
+    background-color: #232C50;
+    box-shadow:0px 4px 8px 0px rgba(0, 0, 0, 0.25) ;
+  }
+
+
 }
