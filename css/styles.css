@@ -1,90 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Poppins:wght@100;300;400&family=Roboto:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Poppins:wght@100;300;400&family=Roboto:wght@300;500&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family:'Be Vietnam Pro',sans-serif ;
-    color: black;
-    font-size: 16px;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: black;
 }
 
-header,main,footer{
-    max-width: 1200px;
+header {
+  padding: 15px 0;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Seccion-Introduccion */
+.introduccion .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px 0;
+  }
+
+  header .container {
+    max-width: 400px;
     margin: auto;
-}
-
-/* >>>>>>>>>>>  Barra de Navegación  <<<<<<<<<<< */
-
-.container__nav{
-    font-size: 13px;
-    height: 100px;
-    margin: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-      
-}
+  }
 
-.nav_item{
-    padding: 1em 0em;
-}
-
-.nav_item ul:hover{
-    cursor: pointer;
-}
-
-.nav_item ul{
-    
+  .introduccion .container {
+    max-width: 400px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    gap: 1em;
-}
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: end;
+  }
 
-.boton.contacto{
-    padding: .5em 2em;
-    background-color: #8B48BF;
-    color: aliceblue;
-    border: 0px;
+  .container img {
+    max-width: 330px;
+  }
+
+  .descripcion {
+    gap: 200px;
+  }
+
+  .descripcion h2 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  .descripcion p {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .descripcion .contacto {
+    font-size: 13px;
+    display: inline-block;
+    padding: 1em 3em;
+    margin-top: 28px;
+    color: white;
+    background-color: #8b48bf;
+    border-color: none;
     border-radius: 50px;
-    box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.40);
-}
+  }
 
-.boton.navegacion:hover{
-    cursor: pointer;
-}
-
-
-/*>>>>>>>>>>>>  CSS MAIN <<<<<<<<<<<<<<<<<<< */
-
-.container{
+  .informacion .container {
+    background-color: #3cddf3;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 40px 20px;
     display: flex;
-    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: start;
+  }
 
+  .informacion h2,
+  p {
+    color: white;
+  }
+
+  .nfotm
+
+  .informacion p{
+    font-size: 14.5px;
+  }
 }
-
-.introduccion article{
-    height: 540px;
-    padding: 1em 0em;
-}
-.mayusculas {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 0.5em;
-    /* letter-spacing: ; */
-}
-
-
-/*>>>>>>>>>>>>>> CSS mobile <<<<<<<<<<<< */
-
-@media (max-width:600px) {
-    .nav_item{
-        display:none;
-    }
-    
-}
-
-
