@@ -55,6 +55,10 @@ header .container {
     text-align: end;
   }
 
+  .descripcion p{
+    color:black ;
+  }
+
   .container img {
     max-width: 330px;
   }
